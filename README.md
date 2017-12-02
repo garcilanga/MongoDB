@@ -33,8 +33,7 @@ sudo apt-get install -y mongodb-org
 
 ```
 
-Con ésto se han instalado algunos paquetes, incluyendo la versión estable más reciente de MongoDB, así como herramientas administrativas para el servidor MongoDB.
-
+Con ésto se habrá instalado en el sistema algunos paquetes, incluyendo la versión estable más reciente de MongoDB, así como herramientas administrativas para el servidor MongoDB.
 
 ## Configurar MongoDB 3.6 como servicio
 
