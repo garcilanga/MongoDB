@@ -1,4 +1,5 @@
 # Instalación de MongoDB
+![mongodbLogo](images/mongodb-logo.jpg)
 
 MongoDB es una **base de datos NoSQL orientada a documentos**, libre, de código abierto y una de las más populares debido a lo simple de su configuración, la inserción de datos y su estructura flexible que facilita los cambios en el modelo de datos. 
 
