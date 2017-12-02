@@ -65,7 +65,7 @@ La sección **Service** especifica cómo debe iniciarse el servicio. La directiv
 
 La sección **Install** le dice a _systemd_ cuándo debe iniciar automáticamente el servicio: _multi-user.target_ es un sistema de secuencias de arranque estándar que hace que el servicio corra automáticamente al arrancar.
 
-Una vez creada el ficehro de configuración, lo siguiente es iniciar con _systemctl_ el servicio recién creado:
+Una vez creada el fichero de configuración, lo siguiente es iniciar con _systemctl_ el servicio recién creado:
 
 ```
 sudo systemctl start mongodb
