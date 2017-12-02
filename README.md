@@ -12,7 +12,7 @@ MongoDB está incluido en el repositorio de paquetes de Ubuntu, pero el **reposi
 
 Para poder acceder al repositorio oficial de MongoDB hay que **importar su clave pública**, ya que Ubuntu autentica los paquetes de software verificando que hayan sido firmados con claves GPG.
 
-Una vez importada la clave, ya se puede **agregar el repositorio oficial de MongoDB al servidor**, actualizando la base de datos local con la lista de paquetes de Mongo, de modo que la aplicación _apt_ sepa de dónde descargarlos.
+Una vez importada la clave, ya se puede **agregar el repositorio oficial de MongoDB al servidor** para actualizar la base de datos local con la lista de paquetes de Mongo, de modo que la aplicación _apt_ sepa de dónde descargarlos.
 
 Por último, solo queda instalar los paquetes de MongoDB.
 
