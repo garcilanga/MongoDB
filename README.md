@@ -28,7 +28,6 @@ sudo apt-get update
 
 # Instala los paquetes de MongoDB
 sudo apt-get install -y mongodb-org
-
 ```
 
 Con ésto se ha instalado la versión estable más reciente de MongoDB, herramientas administrativas para el servidor MongoDB y algunos paquetes adicionales necesarios.
