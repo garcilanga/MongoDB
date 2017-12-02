@@ -1,12 +1,10 @@
-# MongoDB
-
-## Introducción a MongoDB
+# Instalación de MongoDB
 
 MongoDB es una **base de datos NoSQL orientada a documentos**, libre y de código abierto.
 
 MongoDB se puede instalar de varias formas. En este pequeño tutorial vamos a ver cómo instalar **MongoDB 3.6** en **Ubuntu 16.04** descargándolo directamente del repositorio oficial. Después configuraremos el sistema para que el servidor MongoDB se inicie como un **servicio en el arranque de la máquina**.
 
-## Instalación de MongoDB
+## Instalación
 
 MongoDB está incluido en el repositorio de paquetes de Ubuntu, pero el **repositorio oficial de MongoDB** proporciona la **versión más actualizada** y ésta es la opción más **recomendable**.
 
@@ -35,7 +33,7 @@ sudo apt-get install -y mongodb-org
 
 Con ésto se ha instalado la versión estable más reciente de MongoDB, herramientas administrativas para el servidor MongoDB y algunos paquetes adicionales necesarios.
 
-## Configurar MongoDB como servicio
+## Configuración como servicio
 
 Para lanzar MongoDB como un **servicio** de Ubuntu 16.04 **durante el arranque del sistema** hay que crear un archivo de configuración que describa dicho servicio y que informe a _systemd_ cómo debe manejar el recurso.
 
