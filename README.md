@@ -83,7 +83,6 @@ sudo systemctl status mongodb
 
 El servidor MongoDB ya está configurado y corriendo, y el servicio se puede administrar utilizando el comando _systemctl_, por ejemplo:
 ```
-
 # Detener el servicio
 sudo systemctl stop mongodb
 
