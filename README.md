@@ -16,7 +16,7 @@ Una vez importada la clave, ya se puede **agregar el repositorio oficial de Mong
 
 Por último, solo queda instalar los paquetes de MongoDB.
 
-La secuencia de comandos necesaria se muestra en el siguiente script:
+La secuencia de comandos es la siguiente:
 
 ```
 # Importa la clave pública usada por el sistema de gestión de paquetes
