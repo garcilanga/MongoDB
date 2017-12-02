@@ -39,7 +39,7 @@ Con ésto se ha instalado la versión estable más reciente de MongoDB, herramie
 
 Para lanzar MongoDB como un **servicio** de Ubuntu 16.04 **durante el arranque del sistema** hay que crear un archivo de configuración que describa dicho servicio y que informe a _systemd_ cómo debe manejar el recurso.
 
-El **archivo de configuración** se llamará _mongodb.service_ y se ubicará en el directorio _/etc/systemd/system_. Se puede crear este archivo utilizando _nano_ u otro editor de texto.
+El **archivo de configuración** se llamará _mongodb.service_ y se ubicará en el directorio _/etc/systemd/system_. Este archivo se puede crear utilizando _nano_ u otro editor de texto.
 
 ```
 sudo nano /etc/systemd/system/mongodb.service
