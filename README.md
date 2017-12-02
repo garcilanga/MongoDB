@@ -43,7 +43,6 @@ El **archivo de configuración** se llamará _mongodb.service_ y se ubicará en 
 
 ```
 sudo nano /etc/systemd/system/mongodb.service
-
 ```
 El contenido del fichero de configuración debe ser el siguiente:
 
