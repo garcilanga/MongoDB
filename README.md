@@ -8,7 +8,7 @@ MongoDB se puede instalar de varias formas. En este pequeño tutorial vamos a ve
 
 ## Instalación de MongoDB 3.6
 
-MongoDB está incluido en el repositorio de paquetes de Ubuntu, pero el **repositorio oficial de MongoDB** proporciona la **versión más actualizada**, y es ésta última opción la más **recomendable**.
+MongoDB está incluido en el repositorio de paquetes de Ubuntu, pero el **repositorio oficial de MongoDB** proporciona la **versión más actualizada** y ésta es la opción más **recomendable**.
 
 Para poder acceder al repositorio oficial de MongoDB hay que **importar la clave pública** del mismo, ya que Ubuntu se asegura de autenticar los paquetes de software verificando que hayan sido firmados con claves GPG.
 
@@ -33,7 +33,8 @@ sudo apt-get install -y mongodb-org
 
 ```
 
-Con ésto se habrá instalado en el sistema algunos paquetes, incluyendo la versión estable más reciente de MongoDB, así como herramientas administrativas para el servidor MongoDB.
+Con ésto se han instalado algunos paquetes, incluyendo la versión estable más reciente de MongoDB, así como herramientas administrativas para el servidor MongoDB.
+
 
 ## Configurar MongoDB 3.6 como servicio
 
@@ -43,6 +44,7 @@ El **archivo de configuración** se llamará _mongodb.service_ y se ubicará en 
 
 ```
 sudo nano /etc/systemd/system/mongodb.service
+
 ```
 El contenido del fichero de configuración debe ser el siguiente:
 
