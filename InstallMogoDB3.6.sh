@@ -3,7 +3,7 @@
 # Importa la clave pública usada por el sistema de gestión de paquetes
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5
 
-# Crea la lista de ficheros para MongoDB.
+# Crea la lista de ficheros para MongoDB
 echo "deb [ arch=amd64,arm64 ] http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/testing multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.6.list
 
 # Actualiza la base de datos local de paquetes disponibles para Ubuntu
