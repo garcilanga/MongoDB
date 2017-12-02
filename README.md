@@ -6,7 +6,7 @@ MongoDB es una **base de datos NoSQL orientada a documentos**, libre y de códig
 
 MongoDB se puede instalar de varias formas. En este pequeño tutorial vamos a ver cómo instalar **MongoDB 3.6** en **Ubuntu 16.04** descargándolo directamente del repositorio oficial. Después configuraremos el sistema para que el servidor MongoDB se inicie como un **servicio en el arranque de la máquina**.
 
-## Instalación de MongoDB 3.6
+## Instalación de MongoDB
 
 MongoDB está incluido en el repositorio de paquetes de Ubuntu, pero el **repositorio oficial de MongoDB** proporciona la **versión más actualizada** y ésta es la opción más **recomendable**.
 
@@ -35,7 +35,7 @@ sudo apt-get install -y mongodb-org
 
 Con ésto se ha instalado la versión estable más reciente de MongoDB, herramientas administrativas para el servidor MongoDB y algunos paquetes adicionales necesarios.
 
-## Configurar MongoDB 3.6 como servicio
+## Configurar MongoDB como servicio
 
 Para lanzar MongoDB como un **servicio** de Ubuntu 16.04 **durante el arranque del sistema** hay que crear un archivo de configuración que describa dicho servicio y que informe a _systemd_ cómo debe manejar el recurso.
 
@@ -44,6 +44,7 @@ El **archivo de configuración** se llamará _mongodb.service_ y se ubicará en 
 ```
 sudo nano /etc/systemd/system/mongodb.service
 ```
+
 El contenido del fichero de configuración debe ser el siguiente:
 
 ```
@@ -59,15 +60,13 @@ ExecStart=/usr/bin/mongod --quiet --config /etc/mongod.conf
 WantedBy=multi-user.target
 
 bind_ip=0.0.0.0
-
 ```
 
 La sección **Unit** contiene un resumen o descripción legible y las dependencias que deberán existir antes de que el servicio pueda iniciarse. En este caso, MongoDB depende de que la red esté disponible (network.target).
 
-La sección **Service** especifica cómo debe iniciarse el servicio. La directiva _User_ indica que deberá correr bajo el usuario mongodb, y _ExecStart_ el comando para arrancar el servidor MongoDB.
+La sección **Service** especifica cómo debe iniciarse el servicio. La directiva _User_ indica que deberá correr bajo el usuario _mongodb_, y _ExecStart_ el comando para arrancar el servidor MongoDB.
 
 La sección **Install** le dice a _systemd_ cuándo debe iniciar automáticamente el servicio: _multi-user.target_ es un sistema de secuencias de arranque estándar que hace que el servicio corra automáticamente al arrancar.
-
 
 Una vez creada el ficehro de configuración, lo siguiente es iniciar con _systemctl_ el servicio recién creado:
 
