@@ -10,7 +10,7 @@ MongoDB se puede instalar de varias formas. En este pequeño tutorial vamos a ve
 
 MongoDB está incluido en el repositorio de paquetes de Ubuntu, pero el **repositorio oficial de MongoDB** proporciona la **versión más actualizada** y ésta es la opción más **recomendable**.
 
-Para poder acceder al repositorio oficial de MongoDB hay que **importar la clave pública** del mismo, ya que Ubuntu se asegura de autenticar los paquetes de software verificando que hayan sido firmados con claves GPG.
+Para poder acceder al repositorio oficial de MongoDB hay que **importar su clave pública**, ya que Ubuntu autentica los paquetes de software verificando que hayan sido firmados con claves GPG.
 
 Una vez importada la clave, ya se puede **agregar el repositorio oficial de MongoDB al servidor**, actualizando la base de datos local con la lista de paquetes de Mongo, de modo que la aplicación _apt_ sepa de dónde descargarlos.
 
