@@ -14,9 +14,7 @@ Los usuarios deben crearse en la base de datos de sistema _admin_.
 En primer lugar crearemos un usuario administrador para la base de datos de sistema _admin_. Para ello accedemos a MongoDB a través de su cliente por línea de comandos:
 
 ```
-# Acceder al cliente de MongoDB
 mongo
-
 ```
 y una vez en el cliente ejecutaremos las siguientes instrucciones:
 
