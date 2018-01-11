@@ -192,15 +192,14 @@ exit
 ```
 
 De esta forma hemos creado un usuario _test_ con:
-- contraseña: _ptest_
-- rol "_readWrite_": proporciona privilegios de lectura y modificación de datos en todas las colecciones de la base de datos _test_.
-- asignado a la base de datos: _test_
+- contraseña _ptest_
+- rol "_readWrite_" sobre la base de datos _test_, que proporciona privilegios de lectura y modificación de datos en todas las colecciones de la base de datos _test_.
 
-Ahora podemos conectarnos a la base de datos con el usuario _test_ recién creado ejecutando por la consola alguna de las instrucciones anteriores expuestas anteriormente para el usuario _admin_.
+Ahora podemos conectarnos a la base de datos _test_ con el usuario _test_ recién creado, ejecutando por consola alguna de las instrucciones expuestas anteriormente para el usuario _admin_.
 
 ### Crear un superusuario
 
-Algunos roles proporcionan acceso como superusuario, entre ellos el rol _root_, que proporcionan todos los privilegios en todos los recursos del servidor MongoDB excepto sobre las colecciones que comiencen con el profijo '_system._'
+Algunos roles proporcionan acceso como superusuario, entre ellos el rol _root_, que proporciona todos los privilegios excepto sobre las colecciones que comiencen con el prefijo '_system._'
 
 ```
 # Acceder al cliente de MongoDB
@@ -220,11 +219,9 @@ db.createUser({
 exit
 ```
 
-
-
 ## Referencias y más información
 - [Instalar y configurar MongoDB en Ubuntu 16.04](http://www.agiliacenter.com/instalar-y-configurar-mongodb-en-ubuntu-16-04/)
 - [Seguridad en MongoDB](https://www.strsistemas.com/blog/seguridad-en-mongodb)
 - [Security Reference](https://docs.mongodb.com/manual/reference/security/)
-- [Security Reference](https://docs.mongodb.com/manual/security/)
+- [Security](https://docs.mongodb.com/manual/security/)
 
