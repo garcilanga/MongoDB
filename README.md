@@ -96,6 +96,22 @@ sudo systemctl restart mongodb
 sudo systemctl status mongodb
 ```
 
+También se puede administrar el servicio con el comando _service_:
+
+```
+# Detener el servicio
+sudo service mongod stop
+
+# Arrancar el servicio
+sudo service mongod start
+
+# Reiniciar el servicio
+sudo service mongod restart
+
+# Comprobar el estado sel servicio
+sudo service mongod status
+```
+
 ## Referencias y más información
 - [mongodb.org](https://www.mongodb.com/)
 - [Install MongoDB Community Edition on Ubuntu](https://docs.mongodb.com/v3.6/tutorial/install-mongodb-on-ubuntu/)
