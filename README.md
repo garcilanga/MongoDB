@@ -11,3 +11,5 @@ En este pequeño tutorial vamos a ver, en sucesivos documentos, cómo instalar *
 
 ## Referencias y más información
 - [mongodb.org](https://www.mongodb.com/)
+
+<right>[Instalación de MongoDB y configuración como servicio](README_Install.md)</right>
