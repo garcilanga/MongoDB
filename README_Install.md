@@ -121,7 +121,7 @@ Archivo de datos (definido en el fichero de configuración):
 Archivo de logs (definido en el fichero de configuración):
 - /var/log/mongodb/mongod.log
 
-Archivo del servicio de MongoDB _mongod_:
+Archivo de configuración del servicio de MongoDB _mongod_:
 - /etc/systemd/system/mongodb.service
 
 Enlace al ejecutable mongod:
