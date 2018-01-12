@@ -29,6 +29,8 @@ sudo apt-get install -y mongodb-org
 
 Con ésto ya hemos instalado la versión estable más reciente de MongoDB (3.6 en el momento de actualización de este documento), herramientas administrativas para el servidor MongoDB y algunos paquetes adicionales necesarios.
 
+El fichero [InstallMogoDB3.6.sh](InstallMogoDB3.6.sh) contiene el script de instalación.
+
 ## Configuración como servicio
 
 Para lanzar MongoDB como un **servicio** de Ubuntu **durante el arranque del sistema** tenemos que crear un archivo de configuración que describa dicho servicio y que informe a _systemd_ cómo debe manejar el recurso.
