@@ -1,4 +1,4 @@
-# Instalación de MongoDB
+# Instalación de MongoDB y configuración como servicio
 ![mongodbLogo](images/mongodb-logo.jpg)
 
 ## Instalación
