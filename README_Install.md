@@ -110,6 +110,23 @@ sudo service mongod restart
 sudo service mongod status
 ```
 
+## Algunos archivos útiles
+
+- Archivo de configuración de MongoDB:
+    /etc/mongod.conf
+
+- Archivo de datos (definido en el fichero de configuración):
+    /var/lib/mongodb
+
+- Archivo de logs (definido en el fichero de configuración):
+    /var/log/mongodb/mongod.log
+
+- Archivo del servicio de MongoDB _mongod_:
+    /etc/systemd/system/mongodb.service
+
+- Enlace al ejecutable mongod:
+    /usr/bin/mongod
+
 ## Referencias y más información
 - [Install MongoDB Community Edition on Ubuntu](https://docs.mongodb.com/v3.6/tutorial/install-mongodb-on-ubuntu/)
 - [¿Cómo instalar MongoDB en Ubuntu 16.04? ](https://www.digitalocean.com/community/tutorials/como-instalar-mongodb-en-ubuntu-16-04-es)
