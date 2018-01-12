@@ -109,7 +109,6 @@ sudo service mongod status
 ```
 
 ## Referencias y más información
-- [mongodb.org](https://www.mongodb.com/)
 - [Install MongoDB Community Edition on Ubuntu](https://docs.mongodb.com/v3.6/tutorial/install-mongodb-on-ubuntu/)
 - [¿Cómo instalar MongoDB en Ubuntu 16.04? ](https://www.digitalocean.com/community/tutorials/como-instalar-mongodb-en-ubuntu-16-04-es)
 - [MongoDB (wikipedia)](https://es.wikipedia.org/wiki/MongoDB)
