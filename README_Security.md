@@ -1,7 +1,7 @@
 # Securización de MongoDB
 ![mongodbLogo](images/mongodb-logo.jpg)
 
-La instalación por defecto de MongoDB no trae demasiadas medidas de seguridad. Por poner un ejemplo, no tiene activada la autenticación, lo que significa que cualquiera puede entrar en nuestro MongoDB, incluso remotamente si el firewall no tiene bloqueado el puerto 27017.
+La instalación por defecto de MongoDB no trae demasiadas medidas de seguridad. Por poner un ejemplo, no tiene activada la autenticación, lo que significa que cualquiera puede entrar en nuestro MongoDB, incluso de forma remota si el firewall no tiene bloqueado el puerto 27017.
 
 Para desarrollo esto puede ser muy cómodo, pero para cualquier otra situación es necesario implantar algun tipo de medida de seguridad dependiendo de la función que tenga el servidor MongoDB dentro la arquitectura y su situación en la infraestructura.
 
