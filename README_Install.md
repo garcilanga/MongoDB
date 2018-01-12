@@ -110,12 +110,12 @@ sudo service mongod restart
 sudo service mongod status
 ```
 
-## Algunos archivos útiles
+## Algunos archivos y directorios
 
 Archivo de configuración de MongoDB:
 - /etc/mongod.conf
 
-Archivo de datos (definido en el fichero de configuración):
+Directorio de datos (definido en el fichero de configuración):
 - /var/lib/mongodb
 
 Archivo de logs (definido en el fichero de configuración):
