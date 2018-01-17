@@ -1,11 +1,14 @@
 # Securización de MongoDB
 ![mongodbLogo](images/mongodb-logo.jpg)
 
+- Securización básica
 - Crear un usuario administrador
 - Activar la configuración de seguridad
 - Otros parámetros de configuración
 - Crear un usuario no administrador con acceso a una base de datos determinada
 - Crear un superusuario
+
+### Securización básica
 
 La instalación **por defecto** de MongoDB no trae demasiadas medidas de seguridad. Por poner un ejemplo, **no tiene activada la autenticación**, lo que significa que cualquiera puede entrar en nuestro MongoDB, incluso de forma remota si el firewall no tiene bloqueado el puerto 27017.
 
