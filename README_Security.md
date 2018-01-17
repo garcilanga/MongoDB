@@ -8,8 +8,9 @@
 - Conexión a la base de datos de administración con el usuario _admin_
 - Crear un usuario no administrador con acceso a una base de datos determinada
 - Crear un superusuario
+- Referencias y más información
 
-### Securización básica
+## Securización básica
 
 La instalación **por defecto** de MongoDB no trae demasiadas medidas de seguridad. Por poner un ejemplo, **no tiene activada la autenticación**, lo que significa que cualquiera puede entrar en nuestro MongoDB, incluso de forma remota si el firewall no tiene bloqueado el puerto 27017.
 
@@ -19,7 +20,7 @@ La **securización básica** de MongoDB consiste en **crear usuarios** con sus c
 
 Los usuarios deben crearse en la base de datos de sistema _admin_.
 
-### Crear un usuario administrador
+## Crear un usuario administrador
 
 En primer lugar crearemos un usuario administrador para la base de datos de sistema _admin_. Para ello accedemos a MongoDB a través de su cliente por línea de comandos:
 
@@ -47,7 +48,7 @@ De esta forma hemos creado un usuario _admin_ con:
 - contraseña _padmin_
 - rol _userAdminAnyDatabase_ sobre la bade de datos _admin_, que proporciona acceso a las operaciones de administración de usuarios en todas las bases de datos del servidor, excepto _local_ y _config_, además de algunos privilegios sobre el clúster.
 
-### Activar la configuración de seguridad
+## Activar la configuración de seguridad
 
 Después de crear el usuario administrador hay que activar la autenticación en el archivo de configuración de MongoDB. Para ello modificamos el archivo _/etc/mongod.conf_, por ejemplo con el editor _nano_:
 
@@ -118,7 +119,7 @@ sudo service mongod restart
 sudo systemctl restart mongod
 ```
 
-### Otros parámetros de configuración
+## Otros parámetros de configuración
 
 Además de la sección _security_, el fichero de configuración presenta distintos apartados y propiedades de configuración. Veamos algunos de ellos:
 
@@ -131,7 +132,7 @@ Además de la sección _security_, el fichero de configuración presenta distint
 
 - La sección _systemLog_ permite configurar la escritura de los logs del servidor MongoDB.
 
-### Conexión a la base de datos de administración con el usuario _admin_ creado anteriormente
+## Conexión a la base de datos de administración con el usuario _admin_ creado anteriormente
 
 Una vez creado el usuario _admin_ y activada la autenticación, podemos podemos conectarnos a la base de datos con el usuario _admin_ ejecutando por la consola alguna de las siguientes instrucciones:
 
@@ -179,7 +180,7 @@ Resultado:
 }
 ```
 
-### Crear un usuario no administrador con acceso a una base de datos determinada
+## Crear un usuario no administrador con acceso a una base de datos determinada
 
 Crearemos ahora un usuario que tenga permisos de lectura y escritura sobre la base de datos _test_:
 
@@ -207,7 +208,7 @@ De esta forma hemos creado un usuario _test_ con:
 
 Ahora podemos conectarnos a la base de datos _test_ con el usuario _test_ recién creado, ejecutando por consola alguna de las instrucciones expuestas anteriormente para el usuario _admin_.
 
-### Crear un superusuario
+## Crear un superusuario
 
 Algunos roles proporcionan acceso como superusuario, entre ellos el rol _root_, que proporciona todos los privilegios excepto sobre las colecciones que comiencen con el prefijo '_system._'
 
