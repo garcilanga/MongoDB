@@ -1,6 +1,13 @@
 # Instalación de MongoDB y configuración como servicio
 ![mongodbLogo](images/mongodb-logo.jpg)
 
+
+- Instalación
+- Configuración como servicio
+- Administración del servicio
+- Algunos archivos y directorios
+- Referencias y más información
+
 ## Instalación
 
 MongoDB está incluido en el repositorio de paquetes de Ubuntu, pero el **repositorio oficial de MongoDB** proporciona la **versión más actualizada** y ésta es la opción más **recomendable**.
