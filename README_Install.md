@@ -75,11 +75,13 @@ Y, como este comando no responde con ningún mensaje, se puede utilizar este otr
 ```
 sudo systemctl status mongodb
 ```
+El servidor MongoDB ya está configurado y corriendo como un servicio.
 
 ![MongoDB](images/mongodb-status.png)
 
+## Administración del servicio
 
-El servidor MongoDB ya está configurado y corriendo, y el servicio se puede administrar utilizando el comando _systemctl_, por ejemplo:
+El servidor MongoDB puede administrare utilizando el comando _systemctl_, por ejemplo:
 ```
 # Detener el servicio
 sudo systemctl stop mongodb
