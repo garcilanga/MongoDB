@@ -132,7 +132,7 @@ Además de la sección _security_, el fichero de configuración presenta distint
 
 - La sección _systemLog_ permite configurar la escritura de los logs del servidor MongoDB.
 
-## Conexión a la base de datos de administración con el usuario _admin_ creado anteriormente
+## Conexión a la base de datos de administración con el usuario _admin_
 
 Una vez creado el usuario _admin_ y activada la autenticación, podemos podemos conectarnos a la base de datos con el usuario _admin_ ejecutando por la consola alguna de las siguientes instrucciones:
 
