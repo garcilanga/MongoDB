@@ -5,6 +5,7 @@
 - Crear un usuario administrador
 - Activar la configuración de seguridad
 - Otros parámetros de configuración
+- Conexión a la base de datos de administración con el usuario _admin_
 - Crear un usuario no administrador con acceso a una base de datos determinada
 - Crear un superusuario
 
