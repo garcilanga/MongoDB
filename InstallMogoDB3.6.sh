@@ -18,6 +18,5 @@ sudo sed -i -e 's/bindIp: 127.0.0.1/bindIp: 0.0.0.0/gi' /etc/mongod.conf
 
 # Inicia el servicio
 sudo systemctl start mongodb
-sudo systemctl status mongodb
 sudo systemctl enable mongodb
-
+sudo systemctl status mongodb
