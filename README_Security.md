@@ -46,7 +46,7 @@ exit
 
 De esta forma hemos creado un usuario _admin_ con:
 - contraseña _padmin_
-- rol _userAdminAnyDatabase_ sobre la bade de datos _admin_, que proporciona acceso a las operaciones de administración de usuarios en todas las bases de datos del servidor, excepto _local_ y _config_, además de algunos privilegios sobre el clúster.
+- rol _userAdminAnyDatabase_ sobre la base de datos _admin_, que proporciona acceso a las operaciones de administración de usuarios en todas las bases de datos del servidor, excepto _local_ y _config_, además de algunos privilegios sobre el clúster.
 
 ## Activar la configuración de seguridad
 
@@ -104,13 +104,13 @@ processManagement:
 #snmp:
 ```
 
-Para activar la autenticación descomentamos la línea _security_ (eliminando el caracter # del inicio de línea) y añadimos debajo de ella una nueva línea con el texto ‘_authorization: enabled_’, quedando la sección _security_ del siguiente modo:
+Para activar la autenticación descomentamos la línea _security_ (eliminando el caracter # que aparece al inicio de la línea) y añadimos debajo de ella una nueva línea con el texto ‘_authorization: enabled_’, quedando la sección _security_ de la siguiente manera:
 
 ```
 security:
   authorization: enabled
 ```
-Después de modificar el fichero de configuración debemos reiniciar el servicio, para que se apliquen los cambios, con alguna de las siguientes instrucciones:
+Después de modificar el fichero de configuración debemos reiniciar el servicio para que se apliquen los cambios, usando alguna de las siguientes instrucciones:
 ```
 sudo service mongod restart
 
@@ -134,7 +134,7 @@ Además de la sección _security_, el fichero de configuración presenta distint
 
 ## Conexión a la base de datos de administración con el usuario _admin_
 
-Una vez creado el usuario _admin_ y activada la autenticación, podemos conectarnos a la base de datos con el usuario _admin_ ejecutando por la consola alguna de las siguientes instrucciones:
+Una vez creado el usuario _admin_ y activada la autenticación, podemos conectarnos a la base de datos con el usuario _admin_ relizando por consola alguna de las siguientes acciones:
 
 - Indicando por línea de comandos el usuario y su password, la base de datos y el parámetro _-authenticationDatabase_:
 ```
@@ -158,7 +158,6 @@ mongo
 
 db.auth('admin', 'padmin')
 ```
-
 
 Una vez conectados al servidor, podemos ver los usuarios asignados a la base de datos _admin_ con las siguientes instrucciones:
 ```
