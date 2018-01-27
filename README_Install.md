@@ -10,7 +10,7 @@
 
 ## Instalación
 
-MongoDB está incluido en el repositorio de paquetes de Ubuntu, pero el **repositorio oficial de MongoDB** proporciona la **versión más actualizada** y ésta es la opción más **recomendable**.
+MongoDB viene incluido en el repositorio de paquetes de Ubuntu, pero el **repositorio oficial de MongoDB** proporciona la **versión más actualizada** y ésta es la opción más **recomendable** para instalar.
 
 Para poder acceder al repositorio oficial de MongoDB tenemos que **importar su clave pública**, ya que Ubuntu autentica los paquetes de software verificando que hayan sido firmados con claves GPG.
 
@@ -34,7 +34,7 @@ sudo apt-get update
 sudo apt-get install -y mongodb-org
 ```
 
-Con ésto ya hemos instalado la versión estable más reciente de MongoDB (3.6 en el momento de actualización de este documento), herramientas administrativas para el servidor MongoDB y algunos paquetes adicionales necesarios.
+Con ésto ya tenemos instalada la versión estable más reciente de MongoDB (3.6 en el momento de redactar este documento), herramientas administrativas para el servidor MongoDB y algunos paquetes adicionales necesarios.
 
 El fichero [InstallMogoDB3.6.sh](InstallMogoDB3.6.sh) contiene el script de instalación.
 
@@ -48,7 +48,7 @@ El **archivo de configuración** se llamará _mongodb.service_ y se ubicará en 
 sudo nano /etc/systemd/system/mongodb.service
 ```
 
-El contenido del fichero de configuración [mongodb.service](mongodb.service) debe ser el siguiente:
+El contenido del fichero de configuración [mongodb.service](mongodb.service) debe ser algo como esto:
 
 ```
 [Unit]
@@ -69,32 +69,32 @@ La sección **Unit** contiene un resumen o descripción legible y las dependenci
 
 La sección **Service** especifica cómo debe iniciarse el servicio. La directiva _User_ indica que deberá correr bajo el usuario _mongodb_, y _ExecStart_ el comando para arrancar el servidor MongoDB.
 
-La sección **Install** le dice a _systemd_ cuándo debe iniciar automáticamente el servicio: _multi-user.target_ es un sistema de secuencias de arranque estándar que hace que el servicio corra automáticamente al arrancar.
+La sección **Install** informa a _systemd_ cuándo debe iniciar automáticamente el servicio: _multi-user.target_ es un sistema de secuencias de arranque estándar que hace que el servicio corra automáticamente al arrancar.
 
-Una vez creada el fichero de configuración, lo siguiente es iniciar con _systemctl_ el servicio recién creado:
+Una vez creado el fichero de configuración, lo siguiente es iniciar el servicio con _systemctl_:
 
 ```
 sudo systemctl start mongodb
 ```
 
-Y, como este comando no responde con ningún mensaje, se puede utilizar este otro para revisar que el servicio ha arrancado apropiadamente:
+Y como este comando no responde con ningún mensaje, se puede utilizar este otro para revisar que el servicio ha arrancado apropiadamente:
 
 ```
 sudo systemctl status mongodb
 ```
-El servidor MongoDB ya está configurado y corriendo como un servicio.
-
 ![MongoDB](images/mongodb-status.png)
+
+El servidor MongoDB ya está configurado y corriendo como un servicio.
 
 ## Administración del servicio
 
-El servidor MongoDB puede administrare utilizando el comando _systemctl_, por ejemplo:
+El servidor MongoDB puede administrarse mediante el comando _systemctl_:
 ```
-# Detener el servicio
-sudo systemctl stop mongodb
-
 # Arrancar el servicio
 sudo systemctl start mongodb
+
+# Detener el servicio
+sudo systemctl stop mongodb
 
 # Reiniciar el servicio
 sudo systemctl restart mongodb
@@ -106,11 +106,11 @@ sudo systemctl status mongodb
 También se puede administrar el servicio con el comando _service_:
 
 ```
-# Detener el servicio
-sudo service mongod stop
-
 # Arrancar el servicio
 sudo service mongod start
+
+# Detener el servicio
+sudo service mongod stop
 
 # Reiniciar el servicio
 sudo service mongod restart
