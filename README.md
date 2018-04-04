@@ -9,7 +9,7 @@ En este pequeño tutorial vamos a ver, en sucesivos documentos, cómo instalar *
 
 [2.- Securización](Securizacion_de_MongoDB.md)
 
-[3.- HOWTO 1: operaciones con el gestor, bases de datos y colecciones](MongoDbHOWTO1.pdf)
+[3.- HOWTO 1: operaciones con el gestor, bases de datos, colecciones e índices](MongoDbHOWTO1.pdf)
 
 [4.- HOWTO 2: Insert, update, delete, find, count, ...](MongoDbHOWTO2.pdf)
 
