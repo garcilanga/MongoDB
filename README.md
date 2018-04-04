@@ -13,7 +13,7 @@ En este pequeño tutorial vamos a ver, en sucesivos documentos, cómo instalar *
 
 [4.- HOWTO 2: Insert, update, delete, find, count, ...](MongoDbHOWTO2.pdf)
 
-[5.- HOWTO 3: Exportar, importar y copis de seguridad](MongoDbHOWTO3.pdf)
+[5.- HOWTO 3: Exportar, importar y copias de seguridad](MongoDbHOWTO3.pdf)
 
 ## Referencias y más información
 - [mongodb.org](https://www.mongodb.com/)
