@@ -7,7 +7,7 @@ En este pequeño tutorial vamos a ver, en sucesivos documentos, cómo instalar *
 
 [1.- Instalación y configuración como servicio](Instalacion_de_MongoDB.md)
 
-[2.- Securización](README_Security.md)
+[2.- Securización](Securizacion_de_MongoDB.md)
 
 [3.- HOWTO 1: operaciones con el gestor, bases de datos y colecciones](MongoDbHOWTO1.pdf)
 
