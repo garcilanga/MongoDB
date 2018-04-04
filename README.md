@@ -5,7 +5,7 @@ MongoDB es una **base de datos NoSQL orientada a documentos**, libre y de códig
 
 En este pequeño tutorial vamos a ver, en sucesivos documentos, cómo instalar **MongoDB 3.6** en **Ubuntu 16.04** Xenial descargándolo directamente del repositorio oficial, cómo configurar el sistema para que el servidor MongoDB se inicie como un **servicio en el arranque de la máquina**, cómo **securizar** nuestra instalación de MongoDB, algunos **HOWTO** ...
 
-[1.- Instalación y configuración como servicio](MongoDB/Instalación de MongoDB.md)
+[1.- Instalación y configuración como servicio](Instalacion_de_MongoDB.md)
 
 [2.- Securización](README_Security.md)
 
