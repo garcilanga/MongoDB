@@ -13,7 +13,13 @@ En este pequeño tutorial vamos a ver, en sucesivos documentos, cómo instalar *
 
 [4.- HOWTO 2: Insert, update, delete, find, count, ...](MongoDbHOWTO2.pdf)
 
-[5.- HOWTO 3: Exportar, importar y copias de seguridad](MongoDbHOWTO3.pdf)
+[5.- HOWTO 3: Operadores, funciones, tipos de datos](MongoDbHOWTO3.pdf)
+
+[6.- HOWTO 4: Exportar, importar y copias de seguridad](MongoDbHOWTO4.pdf)
+
+[7.- HOWTO 5: Framework aggretaion](MongoDbHOWTO5.pdf)
+
+[8.- HOWTO 5B: Framework aggretaion - ampliación](MongoDbHOWTO5B.md)
 
 ## Referencias y más información
 - [mongodb.org](https://www.mongodb.com/)
