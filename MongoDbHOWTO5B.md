@@ -486,7 +486,7 @@ db.poblacion.aggregate(
 		"Villagalijo",
 		"Villagonzalo Pedernales",
         ...
-        ```
+```
 
 # $addFields
 Añade nuevos campos a los documentos, pasándolos a la siguiente etapa de la secuencia de agregación.
