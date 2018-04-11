@@ -17,9 +17,9 @@ En este pequeño tutorial vamos a ver, en sucesivos documentos, cómo instalar *
 
 [6.- HOWTO 4: Exportar, importar y copias de seguridad](MongoDbHOWTO4.pdf)
 
-[7.- HOWTO 5: Framework aggretaion](MongoDbHOWTO5.pdf)
+[7.- HOWTO 5: Framework aggregation](MongoDbHOWTO5.pdf)
 
-[8.- HOWTO 5B: Framework aggretaion - ampliación](MongoDbHOWTO5B.md)
+[8.- HOWTO 5B: Framework aggregation - ampliación](MongoDbHOWTO5B.md)
 
 ## Referencias y más información
 - [mongodb.org](https://www.mongodb.com/)
