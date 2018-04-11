@@ -6,7 +6,6 @@ En los ejemplos que aparecen en este documento se ha utilizado una colección de
 
 ```
 mongoimport --type csv --db test --collection poblacion --headerline --file poblacion.csv
-
 ```
 
 Las sentencias de algunos de los ejemplos incluyen al final la función '**pretty()**', para poder visualizar mejor los datos.
