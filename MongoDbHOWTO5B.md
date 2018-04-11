@@ -1446,8 +1446,8 @@ Agrupa los documentos entrantes según el valor de una expresión específica y 
 
 # Referencias
 
-https://docs.mongodb.com/manual/aggregation/
-https://docs.mongodb.com/manual/reference/sql-aggregation-comparison/
-https://docs.mongodb.com/manual/reference/operator/aggregation-pipeline/
-https://docs.mongodb.com/manual/reference/operator/aggregation/
+- https://docs.mongodb.com/manual/aggregation/
+- https://docs.mongodb.com/manual/reference/sql-aggregation-comparison/
+- https://docs.mongodb.com/manual/reference/operator/aggregation-pipeline/
+- https://docs.mongodb.com/manual/reference/operator/aggregation/
 
