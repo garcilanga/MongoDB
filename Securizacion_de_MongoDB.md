@@ -124,9 +124,9 @@ sudo systemctl restart mongod
 Además de la sección _security_, el fichero de configuración presenta distintos apartados y propiedades de configuración. Veamos algunos de ellos:
 
 - La propiedad _dbPath_ de la sección _storage_ permite seleccionar el directorio donde se almacenarán todos los datos de nuestras bases de datos. El usuario que ejecuta MongoDB debe tener permisos para poder acceder a ese directorio. Se pueden dar permisos al usuario de MongoDB ejecutando el comando:
-    ```
-    sudo chown mongodb:mongodb -R /var/lib/mongodb
-    ```
+```
+sudo chown mongodb:mongodb -R /var/lib/mongodb
+```
 
 - La propiedad _bindIp_ de la sección _net_ permite configurar la IP que tendrá acceso a MongoDB. Para que sólo acepte peticiones de la propia máquina se debe utilzar _localhost_ ó _127.0.0.1_. Para permitir el acceso desde otra máquina habría que poner su IP.
 
@@ -155,7 +155,6 @@ mongo localhost:27017/admin -u admin -p
 - Abriendo el cliente y empleando la función db.auth():
 ```
 mongo
-
 db.auth('admin', 'padmin')
 ```
 
